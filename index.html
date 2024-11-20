@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dehli 302 - Register</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <button id="backButton">Back</button>
+        <h1>
+            <img src="#" alt="Logo" id="logoPlaceholder"> Dehli 302
+        </h1>
+        <select id="languageDropdown">
+            <option value="en">US English</option>
+            <option value="hi">Hindi</option>
+        </select>
+    </header>
+
+    <main>
+        <div class="content">
+            <h2>Register</h2>
+            <p>Please register by Email or Phone number.</p>
+
+            <div class="buttons">
+                <button id="emailOption">Via Email</button>
+                <button id="phoneOption">Via Phone Number</button>
+            </div>
+
+            <form id="registrationForm" style="display: none;">
+                <div id="emailFields" style="display: none;">
+                    <input type="email" placeholder="Enter Email Address" required>
+                    <input type="password" placeholder="Set Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="text" placeholder="Invitation Code">
+                </div>
+
+                <div id="phoneFields" style="display: none;">
+                    <div class="phone-group">
+                        <select id="countryCode">
+                            <option value="+91">+91</option>
+                        </select>
+                        <input type="tel" placeholder="Enter Phone Number" required>
+                    </div>
+                    <input type="password" placeholder="Set Password" required>
+                    <input type="password" placeholder="Confirm Password" required>
+                    <input type="text" placeholder="Invitation Code">
+                </div>
+
+                <div>
+                    <input type="checkbox" id="privacyAgreement">
+                    <label for="privacyAgreement">I agree to the terms and conditions</label>
+                </div>
+
+                <button type="submit" id="registerButton" disabled>Register</button>
+            </form>
+
+            <button id="loginButton">I already have an account</button>
+        </div>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
